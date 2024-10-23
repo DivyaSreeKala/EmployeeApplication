@@ -41,12 +41,12 @@ const Add = () => {
   useEffect(()=>{
     if(location.state!=null){
       setForm({...form,
-        employeeId:location.state.employee.employeeID,
+        employeeId:location.state.employee.employeeId,
         employeeName:location.state.employee.employeeName,
         designation:location.state.employee.designation,
         salary:location.state.employee.salary,
         department:location.state.employee.department,
-        employeeLocation:location.state.employee.location,
+        employeeLocation:location.state.employee.employeeLocation,
         
 
       })

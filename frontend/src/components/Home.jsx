@@ -21,6 +21,7 @@ const Home = () => {
     //update with newly created instance
 
     axiosInstance.delete('http://localhost:3000/employee/deleteEmployee/'+p).then((res)=>{
+        console.log(p)
       window.location.reload()
     }
 //navigate /path
@@ -32,6 +33,7 @@ const Home = () => {
     axiosInstance.get('http://localhost:3000/employee/')
         .then((res) => {
             setInputs(res.data); // Set fetched product data
+            console.log(res.data)
         })
         .catch((error) => {
             console.error("Error fetching data: ", error); // Handle error
